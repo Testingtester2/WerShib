@@ -1,0 +1,347 @@
+[
+  {
+    "name": "Flexa Network",
+    "url": "https://flexa.co",
+    "category": "flexa",
+    "icon": "⚡",
+    "description": "41,000+ US & Canada locations. The backbone of in-person SHIB — fraud-proof, instant.",
+    "methods": ["fl"],
+    "badge": "41K+ LOCATIONS"
+  },
+  {
+    "name": "Whole Foods",
+    "url": "https://www.wholefoodsmarket.com",
+    "category": "flexa",
+    "icon": "🥦",
+    "description": "Amazon-owned grocery chain. Pay for groceries with SHIB via Flexa.",
+    "methods": ["fl"]
+  },
+  {
+    "name": "Lowe's",
+    "url": "https://www.lowes.com",
+    "category": "flexa",
+    "icon": "🔨",
+    "description": "Home improvement. Tools, appliances & materials via SHIB/Flexa.",
+    "methods": ["fl"]
+  },
+  {
+    "name": "Barnes & Noble",
+    "url": "https://www.barnesandnoble.com",
+    "category": "flexa",
+    "icon": "📚",
+    "description": "Books, gifts & stationery. SHIB via Flexa.",
+    "methods": ["fl"]
+  },
+  {
+    "name": "Petco",
+    "url": "https://www.petco.com",
+    "category": "flexa",
+    "icon": "🐾",
+    "description": "Pet food, supplies & grooming. SHIB via Flexa.",
+    "methods": ["fl"]
+  },
+  {
+    "name": "Ulta Beauty",
+    "url": "https://www.ulta.com",
+    "category": "flexa",
+    "icon": "💄",
+    "description": "Beauty, cosmetics & salon. SHIB via Flexa.",
+    "methods": ["fl"]
+  },
+  {
+    "name": "Regal Cinemas",
+    "url": "https://www.regmovies.com",
+    "category": "flexa",
+    "icon": "🎬",
+    "description": "Major movie chain. Tickets & concessions via SHIB/Flexa.",
+    "methods": ["fl"]
+  },
+  {
+    "name": "Crate & Barrel",
+    "url": "https://www.crateandbarrel.com",
+    "category": "flexa",
+    "icon": "🏠",
+    "description": "Modern furniture & home décor. SHIB via Flexa.",
+    "methods": ["fl"]
+  },
+  {
+    "name": "Baskin-Robbins",
+    "url": "https://www.baskinrobbins.com",
+    "category": "flexa",
+    "icon": "🍦",
+    "description": "Ice cream chain. Buy scoops with SHIB via Flexa.",
+    "methods": ["fl"]
+  },
+  {
+    "name": "Chipotle",
+    "url": "https://www.chipotle.com",
+    "category": "flexa",
+    "icon": "🌯",
+    "description": "Burritos & bowls. SHIB accepted via Flexa.",
+    "methods": ["fl"]
+  },
+  {
+    "name": "Nordstrom",
+    "url": "https://www.nordstrom.com",
+    "category": "flexa",
+    "icon": "👗",
+    "description": "Luxury clothing & Nordstrom Rack. SHIB via Flexa.",
+    "methods": ["fl"]
+  },
+  {
+    "name": "GameStop",
+    "url": "https://www.gamestop.com",
+    "category": "flexa",
+    "icon": "🎮",
+    "description": "Video games & consoles. SHIB via Flexa.",
+    "methods": ["fl"]
+  },
+  {
+    "name": "Office Depot",
+    "url": "https://www.officedepot.com",
+    "category": "flexa",
+    "icon": "📎",
+    "description": "Office supplies & tech. SHIB via Flexa.",
+    "methods": ["fl"]
+  },
+  {
+    "name": "Gucci",
+    "url": "https://www.gucci.com",
+    "category": "luxury",
+    "icon": "👜",
+    "description": "70% of US Gucci stores accept SHIB directly.",
+    "methods": ["fl"]
+  },
+  {
+    "name": "Jomashop",
+    "url": "https://www.jomashop.com",
+    "category": "luxury",
+    "icon": "⌚",
+    "description": "Rolex, Omega, Breitling. SHIB via BitPay.",
+    "methods": ["bp"]
+  },
+  {
+    "name": "DavidSW",
+    "url": "https://www.davidsw.com",
+    "category": "luxury",
+    "icon": "🕰️",
+    "description": "Luxury watches — Rolex, Patek Philippe. Direct SHIB.",
+    "methods": ["di"]
+  },
+  {
+    "name": "Amsterdam Vintage Watches",
+    "url": "https://www.amsterdamvintagewatches.com",
+    "category": "luxury",
+    "icon": "💎",
+    "description": "World-class vintage watches. Rolex, Patek, AP.",
+    "methods": ["di"]
+  },
+  {
+    "name": "The Edit LDN",
+    "url": "https://www.theeditldn.com",
+    "category": "luxury",
+    "icon": "👟",
+    "description": "Limited edition sneakers & streetwear. SHIB.",
+    "methods": ["di"]
+  },
+  {
+    "name": "Newegg",
+    "url": "https://www.newegg.com",
+    "category": "retail",
+    "icon": "🖥️",
+    "description": "Computers & electronics. SHIB via BitPay.",
+    "methods": ["bp"]
+  },
+  {
+    "name": "Rooms To Go",
+    "url": "https://www.roomstogo.com",
+    "category": "retail",
+    "icon": "🛋️",
+    "description": "Furniture & home decor. SHIB online & in-store.",
+    "methods": ["bp"]
+  },
+  {
+    "name": "AMC Theatres",
+    "url": "https://www.amctheatres.com",
+    "category": "entertainment",
+    "icon": "🎥",
+    "description": "950+ locations. Tickets & concessions with SHIB.",
+    "methods": ["bp"]
+  },
+  {
+    "name": "Twitch",
+    "url": "https://www.twitch.tv",
+    "category": "entertainment",
+    "icon": "📡",
+    "description": "Donate SHIB to streamers via BitPay.",
+    "methods": ["bp"]
+  },
+  {
+    "name": "Sling TV",
+    "url": "https://www.sling.com",
+    "category": "entertainment",
+    "icon": "📺",
+    "description": "Live TV streaming. Subscribe with SHIB.",
+    "methods": ["bp"]
+  },
+  {
+    "name": "Menufy",
+    "url": "https://www.menufy.com",
+    "category": "food",
+    "icon": "🍕",
+    "description": "Online food orders from US restaurants. Pay SHIB.",
+    "methods": ["bp"]
+  },
+  {
+    "name": "Travala",
+    "url": "https://www.travala.com",
+    "category": "travel",
+    "icon": "🏨",
+    "description": "3M+ hotels & flights. Top crypto travel platform.",
+    "methods": ["di"]
+  },
+  {
+    "name": "Sacramento Kings",
+    "url": "https://www.nba.com/kings",
+    "category": "sports",
+    "icon": "🏀",
+    "description": "NBA. Kings gear & tickets with SHIB.",
+    "methods": ["bp"]
+  },
+  {
+    "name": "Dallas Mavericks",
+    "url": "https://www.mavs.com",
+    "category": "sports",
+    "icon": "🏀",
+    "description": "NBA. Mavs merch & fan gear with SHIB.",
+    "methods": ["bp"]
+  },
+  {
+    "name": "Carolina Hurricanes",
+    "url": "https://www.nhl.com/hurricanes",
+    "category": "sports",
+    "icon": "🏒",
+    "description": "NHL. Shop the Canes pro shop with SHIB.",
+    "methods": ["bp"]
+  },
+  {
+    "name": "BitPay",
+    "url": "https://bitpay.com",
+    "category": "crypto",
+    "icon": "₿",
+    "description": "Spend SHIB at hundreds of merchants. Card works everywhere.",
+    "methods": ["di"]
+  },
+  {
+    "name": "Bitrefill",
+    "url": "https://www.bitrefill.com",
+    "category": "crypto",
+    "icon": "🎁",
+    "description": "Gift cards & top-ups with SHIB.",
+    "methods": ["di"]
+  },
+  {
+    "name": "Coinsbee",
+    "url": "https://www.coinsbee.com",
+    "category": "crypto",
+    "icon": "🐝",
+    "description": "1500+ brand gift cards paid with SHIB.",
+    "methods": ["di"]
+  },
+  {
+    "name": "Gyft",
+    "url": "https://www.gyft.com",
+    "category": "crypto",
+    "icon": "💳",
+    "description": "Gift cards with crypto. Accepts SHIB.",
+    "methods": ["di"]
+  },
+  {
+    "name": "CryptWerk",
+    "url": "https://cryptwerk.com/pay-with/shib/",
+    "category": "crypto",
+    "icon": "📋",
+    "description": "1000+ merchant directory for SHIB worldwide.",
+    "methods": ["di"]
+  },
+  {
+    "name": "NOWPayments",
+    "url": "https://nowpayments.io",
+    "category": "crypto",
+    "icon": "⚡",
+    "description": "Gateway powering 1000s of SHIB merchants.",
+    "methods": ["np"]
+  },
+  {
+    "name": "CoinGate",
+    "url": "https://coingate.com",
+    "category": "crypto",
+    "icon": "🔗",
+    "description": "SHIB gateway with fiat payouts.",
+    "methods": ["cg"]
+  },
+  {
+    "name": "Moon Ext",
+    "url": "https://paywithmoon.com",
+    "category": "crypto",
+    "icon": "🌙",
+    "description": "Browser extension — spend SHIB anywhere online.",
+    "methods": ["di"]
+  },
+  {
+    "name": "Fold App",
+    "url": "https://foldapp.com",
+    "category": "crypto",
+    "icon": "📱",
+    "description": "Spend SHIB, earn Bitcoin rewards.",
+    "methods": ["di"]
+  },
+  {
+    "name": "Spending.io",
+    "url": "https://spending.io",
+    "category": "crypto",
+    "icon": "🗺️",
+    "description": "Merchant map. Find SHIB locations near you.",
+    "methods": ["di"]
+  },
+  {
+    "name": "Hostkey",
+    "url": "https://www.hostkey.com",
+    "category": "tech",
+    "icon": "🖥️",
+    "description": "Servers, VPS & cloud hosting. Direct SHIB.",
+    "methods": ["di"]
+  },
+  {
+    "name": "Digital Privacy Shop",
+    "url": "https://www.digitalprivacyshop.com",
+    "category": "tech",
+    "icon": "🔒",
+    "description": "De-googled phones, Linux laptops. SHIB accepted.",
+    "methods": ["di"]
+  },
+  {
+    "name": "Porsche Towson",
+    "url": "https://www.porschetowson.com",
+    "category": "auto",
+    "icon": "🏎️",
+    "description": "Porsche dealership. New & used vehicles. SHIB.",
+    "methods": ["di"]
+  },
+  {
+    "name": "Vegas Auto Gallery",
+    "url": "https://www.vegasautogallery.com",
+    "category": "auto",
+    "icon": "🚘",
+    "description": "Exotic & luxury cars in Las Vegas. SHIB.",
+    "methods": ["di"]
+  },
+  {
+    "name": "American Cancer Society",
+    "url": "https://www.cancer.org",
+    "category": "charity",
+    "icon": "❤️",
+    "description": "Donate SHIB to fight cancer via BitPay.",
+    "methods": ["bp"]
+  }
+]

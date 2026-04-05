@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHIB Accepted — wow. such spend. very crypto.</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Bangers&family=Fredoka+One&display=swap" rel="stylesheet">
+<style>
+:root{--y:#FFE300;--o:#FF6B00;--r:#FF2D55;--g:#00FF94;--b:#00D4FF;--p:#B44FFF;--bg:#0D0D0D;--bg2:#141414;--bg3:#1C1C1C;--txt:#FFFFFF;--mu:#888;--rad:16px;--rad2:24px;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--txt);font-family:"Nunito",sans-serif;overflow-x:hidden;}
+body::before{content:"";position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.06) 2px,rgba(0,0,0,0.06) 4px);pointer-events:none;z-index:9999;}
+.marquee-wrap{background:var(--y);padding:10px 0;overflow:hidden;white-space:nowrap;border-bottom:3px solid #000;border-top:3px solid #000;}
+.marquee-inner{display:inline-block;animation:marquee 22s linear infinite;}
+.marquee-inner span{font-family:"Bangers",cursive;font-size:18px;letter-spacing:3px;color:#000;padding:0 32px;}
+@keyframes marquee{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 24px 80px;overflow:hidden;background:radial-gradient(ellipse 100% 80% at 50% 0%,rgba(255,227,0,.08),transparent 60%),var(--bg);}
+.hero-dots{position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.06) 1px,transparent 1px);background-size:28px 28px;pointer-events:none;}
+.doge-stamp{position:absolute;top:24px;right:24px;font-family:"Bangers",cursive;font-size:clamp(11px,2.5vw,15px);letter-spacing:2px;background:var(--r);color:#fff;padding:6px 14px;border-radius:4px;transform:rotate(8deg);border:2px solid #fff;box-shadow:3px 3px 0 #000;white-space:nowrap;}
+.shib-hero-logo{width:clamp(90px,20vw,140px);height:clamp(90px,20vw,140px);border-radius:50%;box-shadow:0 0 0 4px var(--y),0 0 0 8px #000,0 0 60px rgba(255,227,0,.4);animation:wobble 3s ease-in-out infinite,glow 3s ease-in-out infinite;margin-bottom:24px;}
+@keyframes wobble{0%,100%{transform:rotate(-2deg) scale(1);}50%{transform:rotate(2deg) scale(1.04);}}
+@keyframes glow{0%,100%{box-shadow:0 0 0 4px var(--y),0 0 0 8px #000,0 0 40px rgba(255,227,0,.3);}50%{box-shadow:0 0 0 4px var(--y),0 0 0 8px #000,0 0 80px rgba(255,227,0,.6);}}
+.wow-text{font-family:"Bangers",cursive;font-size:clamp(14px,3.5vw,22px);letter-spacing:6px;color:var(--y);margin-bottom:8px;text-shadow:2px 2px 0 rgba(0,0,0,.5);}
+h1{font-family:"Bangers",cursive;font-size:clamp(52px,14vw,140px);line-height:.88;letter-spacing:2px;color:var(--txt);text-shadow:4px 4px 0 #000,6px 6px 0 var(--y);margin-bottom:6px;}
+h1 .shib{color:var(--y);text-shadow:4px 4px 0 #000,6px 6px 0 var(--o);}
+.hero-sub{font-size:clamp(13px,3vw,18px);font-weight:800;color:rgba(255,255,255,.6);margin-bottom:40px;max-width:480px;line-height:1.4;}
+.doge-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:44px;}
+.dtag{font-family:"Bangers",cursive;font-size:clamp(14px,3vw,18px);letter-spacing:2px;padding:6px 16px;border-radius:6px;border:2px solid;}
+.dtag-y{background:rgba(255,227,0,.12);color:var(--y);border-color:var(--y);}
+.dtag-g{background:rgba(0,255,148,.1);color:var(--g);border-color:var(--g);}
+.dtag-b{background:rgba(0,212,255,.1);color:var(--b);border-color:var(--b);}
+.dtag-p{background:rgba(180,79,255,.1);color:var(--p);border-color:var(--p);}
+.dtag-r{background:rgba(255,45,85,.1);color:var(--r);border-color:var(--r);}
+.stats-row{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;width:100%;max-width:620px;}
+.scard{flex:1 1 120px;background:var(--bg2);border:2px solid var(--bg3);border-radius:var(--rad);padding:18px 12px;text-align:center;transition:transform .2s,border-color .2s;}
+.scard:hover{transform:translateY(-4px) rotate(-1deg);border-color:var(--y);}
+.snum{font-family:"Bangers",cursive;font-size:clamp(28px,6vw,40px);color:var(--y);letter-spacing:1px;line-height:1;}
+.slbl{font-size:10px;font-weight:800;color:var(--mu);text-transform:uppercase;letter-spacing:2px;margin-top:2px;}
+.sec{padding:60px 0;}
+.sec-inner{padding:0 20px;}
+@media(min-width:640px){.sec-inner{padding:0 40px;}}
+@media(min-width:1024px){.sec-inner{padding:0 60px;}}
+.sec-head{margin-bottom:32px;}
+.sec-eyebrow{display:inline-block;font-family:"Bangers",cursive;font-size:14px;letter-spacing:3px;background:var(--y);color:#000;padding:4px 14px;border-radius:4px;margin-bottom:12px;border:2px solid #000;box-shadow:2px 2px 0 #000;}
+.sec-title{font-family:"Bangers",cursive;font-size:clamp(32px,7vw,64px);line-height:.9;letter-spacing:1px;color:var(--txt);text-shadow:3px 3px 0 #000;}
+.sec-title em{color:var(--y);font-style:normal;}
+.sec-desc{font-size:13px;font-weight:700;color:var(--mu);margin-top:10px;line-height:1.6;max-width:520px;}
+.cgrid{display:grid;grid-template-columns:1fr;gap:12px;}
+@media(min-width:560px){.cgrid{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:900px){.cgrid{grid-template-columns:repeat(3,1fr);}}
+.ccard{background:var(--bg2);border:2px solid var(--bg3);border-radius:var(--rad2);padding:24px;position:relative;overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s;}
+.ccard::before{content:"";position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;opacity:.06;transition:opacity .4s;}
+.ccard.card-cdc::before{background:var(--b);}
+.ccard.card-bp::before{background:var(--g);}
+.ccard.card-cb::before{background:var(--b);}
+.ccard.card-one::before{background:var(--y);}
+.ccard.card-fold::before{background:var(--o);}
+.ccard:hover{transform:translateY(-6px) rotate(.5deg);border-color:var(--y);box-shadow:0 12px 40px rgba(255,227,0,.15),4px 4px 0 var(--y);}
+.ccard:hover::before{opacity:.12;}
+.ccard-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;}
+.cnet{font-family:"Bangers",cursive;font-size:11px;letter-spacing:2px;padding:3px 10px;border-radius:4px;border:2px solid;}
+.nv{color:var(--b);border-color:var(--b);background:rgba(0,212,255,.1);}
+.nm{color:var(--r);border-color:var(--r);background:rgba(255,45,85,.1);}
+.cacc-big{text-align:right;}
+.cacc-n{font-family:"Bangers",cursive;font-size:22px;color:var(--y);line-height:1;}
+.cacc-l{font-size:9px;font-weight:800;color:var(--mu);letter-spacing:1px;text-transform:uppercase;}
+.clogo-wrap{height:32px;display:flex;align-items:center;margin-bottom:14px;}
+.clogo{height:28px;max-width:120px;object-fit:contain;filter:brightness(0) invert(1);opacity:.9;}
+.clogo.clr{filter:none;opacity:1;}
+.cname{font-family:"Bangers",cursive;font-size:22px;letter-spacing:1px;margin-bottom:6px;color:var(--txt);}
+.cdesc{font-size:12px;font-weight:700;color:var(--mu);line-height:1.6;margin-bottom:16px;}
+.cperks{list-style:none;display:flex;flex-direction:column;gap:5px;margin-bottom:20px;}
+.cperks li{display:flex;gap:8px;font-size:11px;font-weight:700;color:rgba(255,255,255,.7);line-height:1.4;}
+.cperks li::before{content:"F43E";font-size:10px;flex-shrink:0;margin-top:1px;}
+.ccta{display:inline-flex;align-items:center;gap:6px;font-family:"Bangers",cursive;font-size:13px;letter-spacing:2px;background:var(--y);color:#000;padding:8px 18px;border-radius:8px;text-decoration:none;border:2px solid #000;box-shadow:2px 2px 0 #000;transition:transform .15s,box-shadow .15s;}
+.ccta:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 #000;}
+.ccta::after{content:"92";}
+.egrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;}
+@media(min-width:560px){.egrid{grid-template-columns:repeat(3,1fr);}}
+@media(min-width:900px){.egrid{grid-template-columns:repeat(4,1fr);}}
+.ecat{background:var(--bg2);border:2px solid var(--bg3);border-radius:var(--rad);padding:18px 16px;transition:transform .2s,border-color .2s,background .2s;cursor:default;}
+.ecat:hover{transform:translateY(-4px) rotate(-.5deg);border-color:rgba(255,227,0,.4);background:var(--bg3);}
+.ei{font-size:28px;margin-bottom:8px;display:block;}
+.en{font-family:"Fredoka One",cursive;font-size:15px;margin-bottom:4px;color:var(--txt);}
+.eex{font-size:10px;font-weight:700;color:var(--mu);line-height:1.6;}
+.evia{display:flex;gap:4px;margin-top:10px;flex-wrap:wrap;}
+.chip{font-size:8px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:2px 7px;border-radius:12px;border:1.5px solid;}
+.c-cdc{color:var(--b);border-color:rgba(0,212,255,.3);background:rgba(0,212,255,.07);}
+.c-bp{color:var(--g);border-color:rgba(0,255,148,.3);background:rgba(0,255,148,.07);}
+.c-cb{color:var(--b);border-color:rgba(0,212,255,.3);background:rgba(0,212,255,.07);}
+.c-fold{color:var(--o);border-color:rgba(255,107,0,.3);background:rgba(255,107,0,.07);}
+.c-one{color:var(--y);border-color:rgba(255,227,0,.3);background:rgba(255,227,0,.07);}
+.fbar{display:flex;gap:8px;padding-bottom:28px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;}
+.fbar::-webkit-scrollbar{display:none;}
+.fb{flex-shrink:0;font-family:"Bangers",cursive;font-size:13px;letter-spacing:2px;padding:8px 16px;border-radius:8px;border:2px solid var(--bg3);background:var(--bg2);color:var(--mu);cursor:pointer;transition:all .2s;white-space:nowrap;}
+.fb:hover,.fb.act{border-color:var(--y);color:var(--y);background:rgba(255,227,0,.08);box-shadow:2px 2px 0 rgba(255,227,0,.3);}
+.mgrid{display:grid;grid-template-columns:1fr;gap:10px;}
+@media(min-width:480px){.mgrid{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:800px){.mgrid{grid-template-columns:repeat(3,1fr);}}
+@media(min-width:1100px){.mgrid{grid-template-columns:repeat(4,1fr);}}
+.mc{background:var(--bg2);border:2px solid var(--bg3);border-radius:var(--rad);overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s;animation:popin .4s ease backwards;}
+.mc:hover{transform:translateY(-5px);border-color:var(--y);box-shadow:0 8px 30px rgba(255,227,0,.12),3px 3px 0 var(--y);}
+.mc.fl{border-color:rgba(0,255,148,.15);}
+.mc.fl:hover{border-color:var(--g);box-shadow:0 8px 30px rgba(0,255,148,.12),3px 3px 0 var(--g);}
+@keyframes popin{from{opacity:0;transform:scale(.9) translateY(10px);}to{opacity:1;transform:scale(1) translateY(0);}}
+.mi{position:relative;height:160px;overflow:hidden;background:var(--bg3);}
+.mi img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .5s;display:block;}
+.mc:hover .mi img{transform:scale(1.06);}
+.mfb{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;gap:6px;}
+.mfbi{font-size:36px;}
+.mfbd{font-size:10px;font-weight:800;color:var(--mu);}
+.mfade{position:absolute;bottom:0;left:0;right:0;height:60%;background:linear-gradient(to top,var(--bg2),transparent);pointer-events:none;}
+.mtag{position:absolute;top:8px;right:8px;font-family:"Bangers",cursive;font-size:9px;letter-spacing:1.5px;background:var(--y);color:#000;padding:3px 8px;border-radius:4px;border:1.5px solid #000;box-shadow:1px 1px 0 #000;}
+.mcat{position:absolute;top:8px;left:8px;background:rgba(0,0,0,.8);border:1.5px solid rgba(255,255,255,.1);color:var(--mu);font-size:8px;font-weight:800;letter-spacing:1px;padding:3px 8px;border-radius:4px;text-transform:uppercase;backdrop-filter:blur(6px);}
+.mbody{padding:14px;}
+.mname{font-family:"Fredoka One",cursive;font-size:17px;margin-bottom:4px;line-height:1.1;}
+.mdesc{font-size:11px;font-weight:700;color:var(--mu);line-height:1.55;margin-bottom:10px;}
+.mlink{display:inline-flex;align-items:center;gap:4px;font-family:"Bangers",cursive;font-size:11px;letter-spacing:1.5px;color:var(--y);text-decoration:none;text-transform:uppercase;border-bottom:1.5px solid rgba(255,227,0,.3);padding-bottom:1px;transition:all .2s;}
+.mlink:hover{color:var(--o);border-color:var(--o);}
+.mlink::after{content:"97";}
+.mbadges{display:flex;gap:4px;margin-top:8px;flex-wrap:wrap;}
+.mb{font-size:8px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;padding:2px 6px;border-radius:4px;border:1.5px solid;}
+.mb-fl{color:var(--g);border-color:rgba(0,255,148,.25);background:rgba(0,255,148,.07);}
+.mb-bp{color:var(--b);border-color:rgba(0,212,255,.25);background:rgba(0,212,255,.07);}
+.mb-di{color:var(--y);border-color:rgba(255,227,0,.25);background:rgba(255,227,0,.07);}
+.mb-np{color:var(--p);border-color:rgba(180,79,255,.25);background:rgba(180,79,255,.07);}
+.mb-cg{color:var(--o);border-color:rgba(255,107,0,.25);background:rgba(255,107,0,.07);}
+.mb-sp{color:var(--g);border-color:rgba(0,255,148,.35);background:rgba(0,255,148,.1);}
+.mb-nw{color:var(--y);border-color:rgba(255,227,0,.35);background:rgba(255,227,0,.1);}
+.div-bar{background:var(--bg3);border-top:2px solid #222;border-bottom:2px solid #222;padding:2px 0;overflow:hidden;white-space:nowrap;}
+.div-inner{display:inline-block;animation:marquee 30s linear infinite;}
+.div-inner span{font-family:"Bangers",cursive;font-size:14px;letter-spacing:4px;color:#333;padding:6px 28px;}
+footer{background:var(--bg2);border-top:3px solid var(--y);padding:40px 20px;text-align:center;}
+.flogo{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:12px;}
+.flogo img{width:36px;height:36px;border-radius:50%;box-shadow:0 0 0 3px var(--y);}
+.fbrand{font-family:"Bangers",cursive;font-size:24px;letter-spacing:2px;color:var(--y);}
+.fcopy{font-size:11px;font-weight:700;color:var(--mu);line-height:1.8;}
+.sec-cards{background:var(--bg);}
+.sec-ev{background:linear-gradient(180deg,var(--bg) 0%,rgba(0,255,148,.02) 100%);}
+.sec-merch{background:var(--bg);}
+</style>
+</head>
+<body>
+<!-- MARQUEE TOP -->
+<div class="marquee-wrap">
+<div class="marquee-inner">
+<span>WOW SUCH SHIB 🐕</span><span>VERY CRYPTO 💎</span><span>MUCH SPEND 🛒</span><span>SO ACCEPTED ✅</span><span>WOW SUCH SHIB 🐕</span><span>VERY CRYPTO 💎</span><span>MUCH SPEND 🛒</span><span>SO ACCEPTED ✅</span><span>WOW SUCH SHIB 🐕</span><span>VERY CRYPTO 💎</span><span>MUCH SPEND 🛒</span><span>SO ACCEPTED ✅</span><span>WOW SUCH SHIB 🐕</span><span>VERY CRYPTO 💎</span><span>MUCH SPEND 🛒</span><span>SO ACCEPTED ✅</span>
+</div>
+</div>
+<!-- HERO -->
+<section class="hero">
+<div class="hero-dots"></div>
+<div class="doge-stamp">such utility. wow.</div>
+<img class="shib-hero-logo" src="https://assets.coingecko.com/coins/images/11939/large/shiba.png" alt="SHIB">
+<div class="wow-text">WOW &middot; SUCH SPEND &middot; VERY ACCEPTED</div>
+<h1>Spend <span class="shib">SHIB</span><br>Everywhere</h1>
+<p class="hero-sub">From Walmart to Gucci. From Chipotle to Porsche dealerships. Your meme coin just became the most useful coin in your wallet. &#128062;</p>
+<div class="doge-tags">
+<span class="dtag dtag-y">very utility</span>
+<span class="dtag dtag-g">much merchant</span>
+<span class="dtag dtag-b">so global</span>
+<span class="dtag dtag-p">wow 100M+ locations</span>
+<span class="dtag dtag-r">such flexa. 41K stores</span>
+</div>
+<div class="stats-row">
+<div class="scard"><div class="snum">100M+</div><div class="slbl">Card Locations</div></div>
+<div class="scard"><div class="snum">41K+</div><div class="slbl">Flexa US Stores</div></div>
+<div class="scard"><div class="snum">5</div><div class="slbl">Crypto Cards</div></div>
+<div class="scard"><div class="snum">50+</div><div class="slbl">Direct Merchants</div></div>
+</div>
+</section>
+
+<!-- DIVIDER -->
+<div class="div-bar"><div class="div-inner"><span>LOAD SHIB</span><span>SWIPE CARD</span><span>BUY EVERYTHING</span><span>WOW</span><span>LOAD SHIB</span><span>SWIPE CARD</span><span>BUY EVERYTHING</span><span>WOW</span><span>LOAD SHIB</span><span>SWIPE CARD</span><span>BUY EVERYTHING</span><span>WOW</span><span>LOAD SHIB</span><span>SWIPE CARD</span><span>BUY EVERYTHING</span><span>WOW</span></div></div>
+
+<!-- STEP 1: CARDS -->
+<section class="sec sec-cards">
+<div class="sec-inner">
+<div class="sec-head">
+<div class="sec-eyebrow">Step 01 &#8212; The Cards</div>
+<div class="sec-title">Load <em>SHIB</em>.<br>Swipe Anywhere.</div>
+<div class="sec-desc">These crypto cards convert your SHIB to fiat at the point of sale. Accepted at every Visa or Mastercard terminal on planet earth. 100M+ locations. No merchant crypto integration needed.</div>
+</div>
+<div class="cgrid" id="cgrid"></div>
+</div>
+</section>
+
+<!-- DIVIDER -->
+<div class="div-bar"><div class="div-inner"><span>GROCERY</span><span>GAS</span><span>HOTELS</span><span>RESTAURANTS</span><span>STREAMING</span><span>AMAZON</span><span>PHARMACIES</span><span>DENTIST</span><span>GROCERY</span><span>GAS</span><span>HOTELS</span><span>RESTAURANTS</span><span>STREAMING</span><span>AMAZON</span><span>PHARMACIES</span><span>DENTIST</span></div></div>
+
+<!-- STEP 2: EVERYWHERE -->
+<section class="sec sec-ev">
+<div class="sec-inner">
+<div class="sec-head">
+<div class="sec-eyebrow">Step 02 &#8212; Universal Access</div>
+<div class="sec-title">Every Category.<br><em>Every Brand.</em></div>
+<div class="sec-desc">With a crypto card loaded with SHIB, literally every checkout that accepts Visa or Mastercard becomes a SHIB checkout. That's your grocery store, your dentist, Amazon, Netflix and more.</div>
+</div>
+<div class="egrid" id="egrid"></div>
+</div>
+</section>
+
+<!-- DIVIDER -->
+<div class="div-bar"><div class="div-inner"><span>SHIB ACCEPTED HERE</span><span>&#128021;</span><span>SHIB ACCEPTED HERE</span><span>&#128021;</span><span>SHIB ACCEPTED HERE</span><span>&#128021;</span><span>SHIB ACCEPTED HERE</span><span>&#128021;</span><span>SHIB ACCEPTED HERE</span><span>&#128021;</span><span>SHIB ACCEPTED HERE</span><span>&#128021;</span><span>SHIB ACCEPTED HERE</span><span>&#128021;</span></div></div>
+
+<!-- STEP 3: MERCHANTS -->
+<section class="sec sec-merch">
+<div class="sec-inner">
+<div class="sec-head">
+<div class="sec-eyebrow">Step 03 &#8212; Direct SHIB</div>
+<div class="sec-title">Native <em>SHIB</em><br>Acceptance.</div>
+<div class="sec-desc">These merchants accept SHIB directly from your wallet &#8212; no card needed. Via Flexa's 41K+ in-store network, BitPay, and native wallet integrations.</div>
+</div>
+<div class="fbar" id="fbar"></div>
+<div class="mgrid" id="mgrid"></div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="flogo">
+<img src="https://assets.coingecko.com/coins/images/11939/large/shiba.png" alt="SHIB">
+<span class="fbrand">SHIB Accepted</span>
+</div>
+<p style="font-family:'Bangers',cursive;font-size:18px;letter-spacing:3px;color:rgba(255,227,0,.4);margin-bottom:10px;">wow. such spend. very utility. &#128062;</p>
+<div class="fcopy">
+Built for the SHIBArmy &nbsp;&middot;&nbsp; Always verify acceptance before purchase<br>
+Not financial advice &nbsp;&middot;&nbsp; Data current April 2026
+</div>
+</footer>
+<script>
+/* CARDS (hardcoded) */
+const cards=[
+{id:'cdc',name:"Crypto.com Visa",logo:"https://cryptologos.cc/logos/crypto-com-coin-cro-logo.png",clr:true,net:"visa",url:"https://crypto.com/cards",acc:"100M+",alab:"Visa locations",desc:"The ultimate crypto card. Load SHIB, spend everywhere Visa is. Industry-leading rewards up to 8%.",perks:["Up to 8% CRO cashback on purchases","Free Spotify, Netflix & Amazon Prime","Airport lounge access worldwide","Zero FX fees internationally","CDC Pay for direct SHIB at partners"]},
+{id:'bp',name:"BitPay Mastercard",logo:"https://bitpay.com/img/logo/bitpay-logo-white.svg",clr:false,net:"mc",url:"https://bitpay.com/card",acc:"100M+",alab:"Mastercard locations",desc:"Load from your BitPay Wallet with SHIB and spend at any Mastercard merchant on earth. Reload anytime.",perks:["100M+ Mastercard locations accepted","Instant SHIB \u2192 USD at point of sale","No monthly or reload fees","Virtual card for instant online use","Reload from any crypto asset"]},
+{id:'cb',name:"Coinbase Card",logo:"https://upload.wikimedia.org/wikipedia/commons/1/1a/24x7ths_coinbase-logo.png",clr:false,net:"visa",url:"https://www.coinbase.com/card",acc:"100M+",alab:"Visa locations",desc:"Visa debit linked directly to your Coinbase account. Spend SHIB directly, earn crypto rewards.",perks:["4% back in XLM or 1% back in BTC","Spend from Coinbase SHIB balance","Everywhere Visa is accepted globally","Instant conversion at checkout","No annual fee"]},
+{id:'one',name:"One \u2014 Walmart Pay",logo:"",clr:false,net:"visa",url:"https://one.walmart.com",acc:"4,600+",alab:"Walmart locations",desc:"Walmart's fintech app, freshly integrated with SHIB. Shop Walmart's massive ecosystem with your SHIB.",perks:["\ud83c\udd95 SHIB payments added April 2026","4,600+ Walmart & Sam's Club stores","Walmart.com and Walmart Pay","Earn Walmart Cash on purchases","Early paycheck, no-fee banking"]},
+{id:'fold',name:"Fold Visa Card",logo:"",clr:false,net:"visa",url:"https://foldapp.com",acc:"100M+",alab:"Visa locations",desc:"Stack Bitcoin on every swipe. Load from SHIB, spend everywhere Visa is, earn BTC rewards back.",perks:["Bitcoin rewards on every purchase","Spin the wheel for bonus BTC","Load from SHIB + 10 crypto assets","Everywhere Visa is accepted","No annual fee"]},
+];
+const nmap={visa:'nv',mc:'nm'};const nlab={visa:'Visa',mc:'MC'};
+document.getElementById('cgrid').innerHTML=cards.map(c=>`
+<div class="ccard card-${c.id}">
+<div class="ccard-top">
+<span class="cnet ${nmap[c.net]}">${nlab[c.net]}</span>
+<div class="cacc-big"><div class="cacc-n">${c.acc}</div><div class="cacc-l">${c.alab}</div></div>
+</div>
+<div class="clogo-wrap">${c.logo?`<img class="clogo ${c.clr?'clr':''}" src="${c.logo}" alt="${c.name}" onerror="this.style.display='none'">`:`<span style="font-family:'Bangers',cursive;font-size:18px;letter-spacing:2px;color:#666">${c.name.split(' ').slice(-2).join(' ')}</span>`}</div>
+<div class="cname">${c.name}</div>
+<div class="cdesc">${c.desc}</div>
+<ul class="cperks">${c.perks.map(p=>`<li>${p}</li>`).join('')}</ul>
+<a class="ccta" href="${c.url}" target="_blank" rel="noopener">Open ${c.url.replace('https://','').replace('www.','').split('/')[0]}</a>
+</div>`).join('');
+
+/* EVERYWHERE (hardcoded) */
+const ecats=[
+{i:"\ud83d\uded2",n:"Grocery & Retail",e:"Walmart, Target, Costco, Kroger, Safeway, CVS, Walgreens",v:["cdc","bp","cb","fold","one"]},
+{i:"\u2708\ufe0f",n:"Travel & Hotels",e:"Delta, United, Marriott, Hilton, Airbnb, Expedia, Booking",v:["cdc","bp","cb"]},
+{i:"\ud83c\udf54",n:"Restaurants",e:"McDonald's, Starbucks, Chipotle, Subway, DoorDash, Uber Eats",v:["cdc","bp","cb","fold"]},
+{i:"\u26fd",n:"Gas Stations",e:"Shell, BP, Chevron, Exxon, Mobil, Circle K, Speedway",v:["cdc","bp","cb","fold"]},
+{i:"\ud83c\udfac",n:"Streaming & Gaming",e:"Netflix, Spotify, Disney+, PlayStation, Steam, Apple",v:["cdc","bp","cb","fold"]},
+{i:"\ud83d\udce6",n:"E-Commerce",e:"Amazon, eBay, Etsy, Best Buy, Shopify stores, Newegg",v:["cdc","bp","cb","fold"]},
+{i:"\ud83d\udc55",n:"Fashion",e:"H&M, Zara, Nike, Adidas, Gap, Macy's, Forever 21",v:["cdc","bp","cb","fold"]},
+{i:"\ud83c\udfe0",n:"Home & Hardware",e:"Home Depot, Lowe's, IKEA, Wayfair, Williams-Sonoma",v:["cdc","bp","cb"]},
+{i:"\ud83d\udc8a",n:"Health & Pharmacy",e:"CVS, Walgreens, hospitals, dental offices, vets",v:["cdc","bp","cb"]},
+{i:"\ud83d\ude97",n:"Ride & Transport",e:"Uber, Lyft, taxi, car rental, parking, EV charging",v:["cdc","bp","cb","fold"]},
+{i:"\ud83c\udf93",n:"Education",e:"Coursera, Udemy, Skillshare, university stores",v:["cdc","bp","cb"]},
+{i:"\ud83d\udee0\ufe0f",n:"Bills & Utilities",e:"Internet, phone bills, insurance, software subscriptions",v:["cdc","bp","cb","fold"]},
+];
+const cmap={cdc:{c:'c-cdc',l:'CDC'},bp:{c:'c-bp',l:'BitPay'},cb:{c:'c-cb',l:'Coinbase'},fold:{c:'c-fold',l:'Fold'},one:{c:'c-one',l:'One'}};
+document.getElementById('egrid').innerHTML=ecats.map(e=>`
+<div class="ecat">
+<span class="ei">${e.i}</span>
+<div class="en">${e.n}</div>
+<div class="eex">${e.e}</div>
+<div class="evia">${e.v.map(v=>`<span class="chip ${cmap[v].c}">${cmap[v].l}</span>`).join('')}</div>
+</div>`).join('');
+
+/* MERCHANTS - loaded from merchants.json */
+let merchants=[];
+const cats={all:'\ud83d\udc15 All',flexa:'\u26a1 Flexa (41K)',luxury:'\ud83d\udc8e Luxury',retail:'\ud83d\uded2 Retail',entertainment:'\ud83c\udfac Entertainment',food:'\ud83c\udf54 Food',travel:'\u2708\ufe0f Travel',sports:'\ud83c\udfc6 Sports',crypto:'\u20bf Crypto',tech:'\ud83d\udcbb Tech',auto:'\ud83d\ude97 Auto',charity:'\u2764\ufe0f Charity'};
+const catFull={flexa:'Flexa',retail:'Retail',luxury:'Luxury',entertainment:'Film & TV',food:'Food',travel:'Travel',sports:'Sports',crypto:'Crypto',tech:'Tech',auto:'Auto',charity:'Charity'};
+const mlab={fl:'Flexa',bp:'BitPay',di:'Direct',np:'NOWPay',cg:'CoinGate'};
+const mcls={fl:'mb-fl',bp:'mb-bp',di:'mb-di',np:'mb-np',cg:'mb-cg'};
+
+const fb=document.getElementById('fbar');
+Object.entries(cats).forEach(([k,v])=>{
+const b=document.createElement('button');
+b.className='fb'+(k==='all'?' act':'');
+b.textContent=v;
+b.onclick=()=>{document.querySelectorAll('.fb').forEach(x=>x.classList.remove('act'));b.classList.add('act');render(k);};
+fb.appendChild(b);
+});
+
+function render(f='all'){
+const g=document.getElementById('mgrid');g.innerHTML='';
+const list=f==='all'?merchants:merchants.filter(m=>m.category===f);
+list.forEach((m,i)=>{
+const d=document.createElement('div');
+d.className='mc'+(m.category==='flexa'?' fl':'');
+d.style.animationDelay=`${i*.03}s`;
+const dom=m.url.replace('https://','').replace('www.','').split('/')[0];
+const badges=m.methods.map(x=>`<span class="mb ${mcls[x]}">${mlab[x]}</span>`).join('');
+const sp=m.badge?`<span class="mb ${m.badge.includes('\ud83c\udd95')?'mb-nw':'mb-sp'}">${m.badge}</span>`:'';
+d.innerHTML=`
+<div class="mi">
+<img src="https://image.thum.io/get/width/560/crop/320/noanimate/${m.url}" alt="${m.name}" loading="lazy" onerror="this.style.display='none';this.parentNode.querySelector('.mfb').style.display='flex';">
+<div class="mfb"><span class="mfbi">${m.icon}</span><span class="mfbd">${dom}</span></div>
+<div class="mfade"></div>
+<span class="mtag">SHIB \u2713</span>
+<span class="mcat">${catFull[m.category]||m.category}</span>
+</div>
+<div class="mbody">
+<div class="mname">${m.name}</div>
+<div class="mdesc">${m.description}</div>
+<a class="mlink" href="${m.url}" target="_blank" rel="noopener">${dom}</a>
+<div class="mbadges">${badges}${sp}</div>
+</div>`;
+g.appendChild(d);
+});
+}
+
+/* Load merchants from external JSON file */
+fetch('merchants.json')
+.then(r=>r.json())
+.then(data=>{merchants=data;render();})
+.catch(err=>console.error('Failed to load merchants.json:',err));
+</script>
+</body>
+</html>
