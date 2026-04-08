@@ -76,6 +76,10 @@ h1 .shib{color:var(--y);text-shadow:4px 4px 0 #000,6px 6px 0 var(--o);}
 .ccta{display:inline-flex;align-items:center;gap:6px;font-family:"Bangers",cursive;font-size:13px;letter-spacing:2px;background:var(--y);color:#000;padding:8px 18px;border-radius:8px;text-decoration:none;border:2px solid #000;box-shadow:2px 2px 0 #000;transition:transform .15s,box-shadow .15s;}
 .ccta:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 #000;}
 .ccta::after{content:"\2192";}
+.celite{margin-top:16px;background:rgba(255,227,0,.06);border:1.5px solid rgba(255,227,0,.2);border-radius:10px;padding:10px 14px;display:flex;align-items:center;gap:10px;}
+.celite-num{font-family:"Bangers",cursive;font-size:28px;color:var(--y);line-height:1;flex-shrink:0;}
+.celite-txt{font-size:10px;font-weight:800;color:rgba(255,255,255,.6);line-height:1.5;}
+.celite-txt strong{color:var(--y);}
 .egrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;}
 @media(min-width:560px){.egrid{grid-template-columns:repeat(3,1fr);}}
 @media(min-width:900px){.egrid{grid-template-columns:repeat(4,1fr);}}
@@ -210,7 +214,7 @@ footer{background:var(--bg2);border-top:3px solid var(--y);padding:40px 20px;tex
 <div class="sec-head">
 <div class="sec-eyebrow">Step 03 &#8212; Direct SHIB</div>
 <div class="sec-title">Native <em>SHIB</em><br>Acceptance.</div>
-<div class="sec-desc">These merchants accept SHIB directly from your wallet &#8212; no card needed. Via Flexa's 41K+ in-store network, BitPay, and native wallet integrations.</div>
+<div class="sec-desc">These merchants accept SHIB directly from your wallet &#8212; no card needed. Flexa's network spans 41K+ stores but supports only ~30 tokens. BitPay accepts just 16. SHIB made both lists.</div>
 </div>
 <div class="fbar" id="fbar"></div>
 <div class="mgrid" id="mgrid"></div>
@@ -232,11 +236,11 @@ Not financial advice &nbsp;&middot;&nbsp; Data current April 2026
 <script>
 /* CARDS (hardcoded) */
 const cards=[
-{id:'cdc',name:"Crypto.com Visa",logo:"https://cryptologos.cc/logos/crypto-com-coin-cro-logo.png",clr:true,net:"visa",url:"https://crypto.com/cards",acc:"100M+",alab:"Visa locations",desc:"The ultimate crypto card. Load SHIB, spend everywhere Visa is. Industry-leading rewards up to 8%.",perks:["Up to 8% CRO cashback on purchases","Free Spotify, Netflix & Amazon Prime","Airport lounge access worldwide","Zero FX fees internationally","CDC Pay for direct SHIB at partners"]},
-{id:'bp',name:"BitPay Mastercard",logo:"https://bitpay.com/img/logo/bitpay-logo-white.svg",clr:false,net:"mc",url:"https://bitpay.com/card",acc:"100M+",alab:"Mastercard locations",desc:"Load from your BitPay Wallet with SHIB and spend at any Mastercard merchant on earth. Reload anytime.",perks:["100M+ Mastercard locations accepted","Instant SHIB \u2192 USD at point of sale","No monthly or reload fees","Virtual card for instant online use","Reload from any crypto asset"]},
-{id:'cb',name:"Coinbase Card",logo:"https://upload.wikimedia.org/wikipedia/commons/1/1a/24x7ths_coinbase-logo.png",clr:false,net:"visa",url:"https://www.coinbase.com/card",acc:"100M+",alab:"Visa locations",desc:"Visa debit linked directly to your Coinbase account. Spend SHIB directly, earn crypto rewards.",perks:["4% back in XLM or 1% back in BTC","Spend from Coinbase SHIB balance","Everywhere Visa is accepted globally","Instant conversion at checkout","No annual fee"]},
-{id:'one',name:"One \u2014 Walmart Pay",logo:"",clr:false,net:"visa",url:"https://one.walmart.com",acc:"4,600+",alab:"Walmart locations",desc:"Walmart's fintech app, freshly integrated with SHIB. Shop Walmart's massive ecosystem with your SHIB.",perks:["\ud83c\udd95 SHIB payments added April 2026","4,600+ Walmart & Sam's Club stores","Walmart.com and Walmart Pay","Earn Walmart Cash on purchases","Early paycheck, no-fee banking"]},
-{id:'fold',name:"Fold Visa Card",logo:"",clr:false,net:"visa",url:"https://foldapp.com",acc:"100M+",alab:"Visa locations",desc:"Stack Bitcoin on every swipe. Load from SHIB, spend everywhere Visa is, earn BTC rewards back.",perks:["Bitcoin rewards on every purchase","Spin the wheel for bonus BTC","Load from SHIB + 10 crypto assets","Everywhere Visa is accepted","No annual fee"]},
+{id:'cdc',name:"Crypto.com Visa",logo:"https://cryptologos.cc/logos/crypto-com-coin-cro-logo.png",clr:true,net:"visa",url:"https://crypto.com/cards",acc:"100M+",alab:"Visa locations",desc:"The ultimate crypto card. Load SHIB, spend everywhere Visa is. Industry-leading rewards up to 8%.",perks:["Up to 8% CRO cashback on purchases","Free Spotify, Netflix & Amazon Prime","Airport lounge access worldwide","Zero FX fees internationally","CDC Pay for direct SHIB at partners"],elite:{num:"20+",txt:"Crypto.com supports <strong>only ~20 assets</strong> for card top-up. SHIB is one of them \u2014 alongside BTC, ETH & SOL."}},
+{id:'bp',name:"BitPay Mastercard",logo:"https://bitpay.com/img/logo/bitpay-logo-white.svg",clr:false,net:"mc",url:"https://bitpay.com/card",acc:"100M+",alab:"Mastercard locations",desc:"Load from your BitPay Wallet with SHIB and spend at any Mastercard merchant on earth. Reload anytime.",perks:["100M+ Mastercard locations accepted","Instant SHIB \u2192 USD at point of sale","No monthly or reload fees","Virtual card for instant online use","Reload from any crypto asset"],elite:{num:"16",txt:"BitPay handpicked <strong>only 16 cryptos</strong> for their card. Out of 10,000+ tokens \u2014 SHIB made the list."}},
+{id:'cb',name:"Coinbase Card",logo:"https://upload.wikimedia.org/wikipedia/commons/1/1a/24x7ths_coinbase-logo.png",clr:false,net:"visa",url:"https://www.coinbase.com/card",acc:"100M+",alab:"Visa locations",desc:"Visa debit linked directly to your Coinbase account. Spend SHIB directly, earn crypto rewards.",perks:["4% back in XLM or 1% back in BTC","Spend from Coinbase SHIB balance","Everywhere Visa is accepted globally","Instant conversion at checkout","No annual fee"],elite:{num:"10+",txt:"Coinbase lists 200+ tokens but enables <strong>only ~10 for card spend</strong>. SHIB is on that short list."}},
+{id:'one',name:"One \u2014 Walmart Pay",logo:"",clr:false,net:"visa",url:"https://one.walmart.com",acc:"4,600+",alab:"Walmart locations",desc:"Walmart's fintech app, freshly integrated with SHIB. Shop Walmart's massive ecosystem with your SHIB.",perks:["\ud83c\udd95 SHIB payments added April 2026","4,600+ Walmart & Sam's Club stores","Walmart.com and Walmart Pay","Earn Walmart Cash on purchases","Early paycheck, no-fee banking"],elite:{num:"12",txt:"Walmart chose <strong>only 12 cryptos</strong> out of 10,000+ for One Pay. SHIB sits next to BTC, ETH & SOL."}},
+{id:'fold',name:"Fold Visa Card",logo:"",clr:false,net:"visa",url:"https://foldapp.com",acc:"100M+",alab:"Visa locations",desc:"Stack Bitcoin on every swipe. Load from SHIB, spend everywhere Visa is, earn BTC rewards back.",perks:["Bitcoin rewards on every purchase","Spin the wheel for bonus BTC","Load from SHIB + 10 crypto assets","Everywhere Visa is accepted","No annual fee"],elite:{num:"11",txt:"Fold supports <strong>just 11 cryptos</strong> for card loading. SHIB earned its spot alongside Bitcoin."}},
 ];
 const nmap={visa:'nv',mc:'nm'};const nlab={visa:'Visa',mc:'MC'};
 document.getElementById('cgrid').innerHTML=cards.map(c=>`
@@ -250,6 +254,7 @@ document.getElementById('cgrid').innerHTML=cards.map(c=>`
 <div class="cdesc">${c.desc}</div>
 <ul class="cperks">${c.perks.map(p=>`<li>${p}</li>`).join('')}</ul>
 <a class="ccta" href="${c.url}" target="_blank" rel="noopener">Open ${c.url.replace('https://','').replace('www.','').split('/')[0]}</a>
+${c.elite?`<div class="celite"><div class="celite-num">${c.elite.num}</div><div class="celite-txt">${c.elite.txt}</div></div>`:''}
 </div>`).join('');
 
 /* EVERYWHERE (hardcoded) */
