@@ -49,8 +49,8 @@ h1 .shib{color:var(--y);text-shadow:4px 4px 0 #000,6px 6px 0 var(--o);}
 .cgrid{display:grid;grid-template-columns:1fr;gap:12px;}
 @media(min-width:560px){.cgrid{grid-template-columns:repeat(2,1fr);}}
 @media(min-width:900px){.cgrid{grid-template-columns:repeat(3,1fr);}}
-.ccard{background:var(--bg2);border:2px solid var(--bg3);border-radius:var(--rad2);padding:24px;position:relative;overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s;}
-.ccard::before{content:"";position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;opacity:.06;transition:opacity .4s;}
+.ccard{background:var(--bg2);border:2px solid var(--bg3);border-radius:var(--rad2);padding:24px;position:relative;transition:transform .25s,border-color .25s,box-shadow .25s;}
+.ccard::before{content:"";position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;opacity:.06;transition:opacity .4s;z-index:0;}
 .ccard.card-cdc::before{background:var(--b);}
 .ccard.card-bp::before{background:var(--g);}
 .ccard.card-cb::before{background:var(--b);}
