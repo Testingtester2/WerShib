@@ -139,6 +139,30 @@ footer{background:var(--bg2);border-top:3px solid var(--y);padding:40px 20px;tex
 .sec-cards{background:var(--bg);}
 .sec-ev{background:linear-gradient(180deg,var(--bg) 0%,rgba(0,255,148,.02) 100%);}
 .sec-merch{background:var(--bg);}
+/* ── ELITE 12 ── */
+.sec-elite{background:linear-gradient(180deg,var(--bg) 0%,rgba(255,227,0,.03) 50%,var(--bg) 100%);padding:80px 0;}
+.elite-badge{display:inline-block;font-family:"Bangers",cursive;font-size:13px;letter-spacing:3px;background:var(--o);color:#fff;padding:5px 14px;border-radius:4px;margin-bottom:14px;border:2px solid #000;box-shadow:2px 2px 0 #000;}
+.elite-title{font-family:"Bangers",cursive;font-size:clamp(36px,8vw,72px);line-height:.88;letter-spacing:1px;color:var(--txt);text-shadow:3px 3px 0 #000;margin-bottom:6px;}
+.elite-title em{color:var(--y);font-style:normal;}
+.elite-sub{font-size:14px;font-weight:800;color:var(--mu);margin-top:12px;line-height:1.6;max-width:560px;}
+.elite-sub strong{color:var(--y);}
+.coin-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:720px;margin:40px auto 0;}
+@media(min-width:560px){.coin-grid{grid-template-columns:repeat(4,1fr);}}
+@media(min-width:800px){.coin-grid{grid-template-columns:repeat(6,1fr);}}
+.coin-cell{background:var(--bg2);border:2px solid var(--bg3);border-radius:var(--rad);padding:16px 10px;text-align:center;transition:transform .2s,border-color .2s,box-shadow .2s;}
+.coin-cell:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.15);}
+.coin-cell.coin-shib{border-color:var(--y);background:rgba(255,227,0,.06);box-shadow:0 0 30px rgba(255,227,0,.15),0 0 0 1px rgba(255,227,0,.3);animation:shibpulse 2.5s ease-in-out infinite;}
+.coin-cell.coin-shib:hover{transform:translateY(-5px) scale(1.04);box-shadow:0 0 50px rgba(255,227,0,.25),0 0 0 2px var(--y);}
+@keyframes shibpulse{0%,100%{box-shadow:0 0 30px rgba(255,227,0,.12),0 0 0 1px rgba(255,227,0,.3);}50%{box-shadow:0 0 50px rgba(255,227,0,.25),0 0 0 2px rgba(255,227,0,.5);}}
+.coin-icon{width:36px;height:36px;border-radius:50%;margin:0 auto 8px;display:block;}
+.coin-sym{font-family:"Bangers",cursive;font-size:14px;letter-spacing:1px;color:var(--txt);line-height:1;}
+.coin-name{font-size:9px;font-weight:700;color:var(--mu);margin-top:2px;}
+.coin-cell.coin-shib .coin-sym{color:var(--y);}
+.coin-cell.coin-shib .coin-name{color:var(--y);opacity:.8;}
+.elite-callout{margin-top:36px;display:inline-flex;align-items:center;gap:10px;background:rgba(255,227,0,.06);border:2px solid rgba(255,227,0,.2);border-radius:var(--rad);padding:14px 24px;}
+.elite-callout-num{font-family:"Bangers",cursive;font-size:clamp(32px,5vw,48px);color:var(--y);line-height:1;}
+.elite-callout-txt{text-align:left;font-size:12px;font-weight:800;color:rgba(255,255,255,.7);line-height:1.5;}
+.elite-callout-txt strong{color:var(--y);}
 </style>
 </head>
 <body>
@@ -168,6 +192,20 @@ footer{background:var(--bg2);border-top:3px solid var(--y);padding:40px 20px;tex
 <div class="scard"><div class="snum">41K+</div><div class="slbl">Flexa US Stores</div></div>
 <div class="scard"><div class="snum">5</div><div class="slbl">Crypto Cards</div></div>
 <div class="scard"><div class="snum">50+</div><div class="slbl">Direct Merchants</div></div>
+</div>
+</section>
+
+<!-- ELITE 12 -->
+<section class="sec sec-elite">
+<div class="sec-inner" style="text-align:center;">
+<div class="elite-badge">WALMART &middot; ONE PAY &middot; 2026</div>
+<div class="elite-title">Only <em>12</em> Cryptos<br>Made the Cut.</div>
+<div class="elite-sub" style="margin-left:auto;margin-right:auto;">Walmart's One app hand-picked just <strong>12 cryptocurrencies</strong> for payments across 4,600+ stores. Out of 10,000+ tokens in crypto &mdash; <strong>SHIB is one of the twelve.</strong></div>
+<div class="coin-grid" id="coingrid"></div>
+<div class="elite-callout">
+<div class="elite-callout-num">#12</div>
+<div class="elite-callout-txt">Only <strong>12 out of 10,000+</strong> cryptos chosen.<br>SHIB sits alongside <strong>BTC, ETH &amp; SOL.</strong></div>
+</div>
 </div>
 </section>
 
@@ -230,6 +268,28 @@ Not financial advice &nbsp;&middot;&nbsp; Data current April 2026
 </div>
 </footer>
 <script>
+/* ELITE 12 COINS */
+const elite12=[
+{sym:"BTC",name:"Bitcoin",icon:"https://assets.coingecko.com/coins/images/1/small/bitcoin.png",shib:false},
+{sym:"ETH",name:"Ethereum",icon:"https://assets.coingecko.com/coins/images/279/small/ethereum.png",shib:false},
+{sym:"SOL",name:"Solana",icon:"https://assets.coingecko.com/coins/images/4128/small/solana.png",shib:false},
+{sym:"SHIB",name:"Shiba Inu",icon:"https://assets.coingecko.com/coins/images/11939/small/shiba.png",shib:true},
+{sym:"DOGE",name:"Dogecoin",icon:"https://assets.coingecko.com/coins/images/5/small/dogecoin.png",shib:false},
+{sym:"USDC",name:"USD Coin",icon:"https://assets.coingecko.com/coins/images/6319/small/usdc.png",shib:false},
+{sym:"USDT",name:"Tether",icon:"https://assets.coingecko.com/coins/images/325/small/Tether.png",shib:false},
+{sym:"LTC",name:"Litecoin",icon:"https://assets.coingecko.com/coins/images/2/small/litecoin.png",shib:false},
+{sym:"LINK",name:"Chainlink",icon:"https://assets.coingecko.com/coins/images/877/small/chainlink-new-logo.png",shib:false},
+{sym:"UNI",name:"Uniswap",icon:"https://assets.coingecko.com/coins/images/12504/small/uni.jpg",shib:false},
+{sym:"AVAX",name:"Avalanche",icon:"https://assets.coingecko.com/coins/images/12559/small/Avalanche_Circle_RedWhite_Trans.png",shib:false},
+{sym:"XRP",name:"Ripple",icon:"https://assets.coingecko.com/coins/images/44/small/xrp-symbol-white-128.png",shib:false},
+];
+document.getElementById('coingrid').innerHTML=elite12.map(c=>`
+<div class="coin-cell${c.shib?' coin-shib':''}">
+<img class="coin-icon" src="${c.icon}" alt="${c.sym}" onerror="this.style.display='none'">
+<div class="coin-sym">${c.sym}</div>
+<div class="coin-name">${c.name}</div>
+</div>`).join('');
+
 /* CARDS (hardcoded) */
 const cards=[
 {id:'cdc',name:"Crypto.com Visa",logo:"https://cryptologos.cc/logos/crypto-com-coin-cro-logo.png",clr:true,net:"visa",url:"https://crypto.com/cards",acc:"100M+",alab:"Visa locations",desc:"The ultimate crypto card. Load SHIB, spend everywhere Visa is. Industry-leading rewards up to 8%.",perks:["Up to 8% CRO cashback on purchases","Free Spotify, Netflix & Amazon Prime","Airport lounge access worldwide","Zero FX fees internationally","CDC Pay for direct SHIB at partners"]},
